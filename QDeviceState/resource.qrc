@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>tick_green.svg</file>
+        <file>cross_red.svg</file>
+    </qresource>
+</RCC>
