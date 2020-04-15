@@ -171,16 +171,16 @@ void QDeviceMultiState::forceState()
 {
     switch (mState) {
     case State::Tick:
-        mIcon->setIcon(QIcon(":/tick_green.svg"));
+        mIcon->setIcon(QIcon(":/QDeviceMultiState/tick_green.svg"));
         break;
     case State::TickWarning:
-        mIcon->setIcon(QIcon(":/tick_yellow.svg"));
+        mIcon->setIcon(QIcon(":/QDeviceMultiState/tick_yellow.svg"));
         break;
     case State::CrossError:
-        mIcon->setIcon(QIcon(":/cross_red.svg"));
+        mIcon->setIcon(QIcon(":/QDeviceMultiState/cross_red.svg"));
         break;
     case State::CrossWarning:
-        mIcon->setIcon(QIcon(":/cross_yellow.svg"));
+        mIcon->setIcon(QIcon(":/QDeviceMultiState/cross_yellow.svg"));
         break;
     default:
         return;

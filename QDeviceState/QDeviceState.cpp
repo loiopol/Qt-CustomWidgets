@@ -141,9 +141,9 @@ void QDeviceState::closeConnections()
 void QDeviceState::forceState()
 {
     if(mState)
-        mIcon->setIcon(QIcon(":/tick_green.svg"));
+        mIcon->setIcon(QIcon(":/QDeviceState/tick_green.svg"));
     else
-        mIcon->setIcon(QIcon(":/cross_red.svg"));
+        mIcon->setIcon(QIcon(":/QDeviceState/cross_red.svg"));
 
     mDisableButton->setEnabled(mState);
     mEnableButton->setEnabled(!mState);

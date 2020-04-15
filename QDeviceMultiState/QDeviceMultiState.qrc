@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/">
+    <qresource prefix="/QDeviceMultiState">
         <file>tick_green.svg</file>
         <file>cross_red.svg</file>
         <file>cross_yellow.svg</file>

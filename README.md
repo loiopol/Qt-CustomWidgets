@@ -17,7 +17,7 @@ Each widget was developer following the structure below:
     - *MainWindow.h*
 - *QWidgetName.cpp*: The core of the widget.
 - *QWidgetName.h*: The core of the widget.
-- *resource.qrc*: Optional, only if the widget use images or audio elements.
+- *QWidgetName.qrc*: Optional, only if the widget use images or audio elements.
 - *QWidgetName.pri*: The progect file for inclusion of the widget.
 
 ## Include my widgets in your project ##

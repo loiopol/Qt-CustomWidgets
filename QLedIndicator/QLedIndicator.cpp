@@ -164,16 +164,16 @@ void QLedIndicator::forceLedState()
     QPixmap icon;
     switch (mLedState) {
     case Error:
-        icon.load(":/led_red.png");
+        icon.load(":/QLedIndicator/led_red.png");
         break;
     case Inactive:
-        icon.load(":/led_grey.png");
+        icon.load(":/QLedIndicator/led_grey.png");
         break;
     case Active:
-        icon.load(":/led_green.png");
+        icon.load(":/QLedIndicator/led_green.png");
         break;
     case Warning:
-        icon.load(":/led_orange.png");
+        icon.load(":/QLedIndicator/led_orange.png");
         break;
     }
 

@@ -9,7 +9,9 @@ DISTFILES += \
     QDeviceMultiState.h \
     QDeviceMultiState.pri \
     cross_red.svg \
-    tick_green.svg
+    cross_yellow.svg \
+    tick_green.svg \
+    tick_yellow.svg
 
 RESOURCES += \
-    resource.qrc
+    QDeviceMultiState.qrc

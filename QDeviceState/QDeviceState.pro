@@ -12,4 +12,4 @@ DISTFILES += \
     tick_green.svg
 
 RESOURCES += \
-    resource.qrc
+    QDeviceState.qrc

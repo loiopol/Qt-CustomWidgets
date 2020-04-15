@@ -10,7 +10,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    resize(400, 400);
+    resize(300, 260);
     setCentralWidget(new QWidget(this));
     QVBoxLayout *layout = new QVBoxLayout(this);
     centralWidget()->setLayout(layout);
