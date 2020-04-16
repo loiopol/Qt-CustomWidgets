@@ -3,9 +3,6 @@ TEMPLATE = lib
 
 LIBS += -L.
 
-#If defined, display the frame of each widget
-CONFIG(debug, debug|release) : DEFINES += PRINT_FRAME
-
 TARGET = $$qtLibraryTarget($$TARGET)
 INSTALLS += target
 windows {
@@ -23,13 +20,13 @@ greaterThan(QT_MAJOR_VERSION, 4) {
     CONFIG += designer
 }
 
+include(../QPasswordPad.pri)
+
 HEADERS += \
-    QSwitchPlugin.h
+    QPasswordPadPlugin.h
 
 SOURCES += \
-    QSwitchPlugin.cpp
-
-include(../QSwitch.pri)
+    QPasswordPadPlugin.cpp
 
 RESOURCES += \
-    QSwitchPlugin.qrc
+    QPasswordPadPlugin.qrc

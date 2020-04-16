@@ -27,6 +27,6 @@ SOURCES += \
     QLedIndicatorPlugin.cpp
 
 RESOURCES += \
-    icons.qrc
+    QLedIndicatorPlugin.qrc
 
 include(../QLedIndicator.pri)

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/QDeviceMultiStatePlugin">
+        <file>QDeviceMultiStatePlugin.png</file>
+    </qresource>
+</RCC>

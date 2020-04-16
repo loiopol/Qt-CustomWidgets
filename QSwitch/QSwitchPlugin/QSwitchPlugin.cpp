@@ -19,7 +19,7 @@ QString QSwitchPlugin::group() const
 
 QIcon QSwitchPlugin::icon() const
 {
-    return QIcon(":/icon.png");
+    return QIcon(":/QSwitchPlugin/QSwitchPlugin.png");
 }
 
 QString QSwitchPlugin::includeFile() const

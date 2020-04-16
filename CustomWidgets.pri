@@ -18,6 +18,10 @@ USE_CW_LEDINDICATOR {
         include($$PWD/QLedIndicator/QLedIndicator.pri)
 }
 
+USE_CW_PASSWORDPAD {
+        include($$PWD/QPasswordPad/QPasswordPad.pri)
+}
+
 USE_CW_SWITCH {
         include($$PWD/QSwitch/QSwitch.pri)
 }

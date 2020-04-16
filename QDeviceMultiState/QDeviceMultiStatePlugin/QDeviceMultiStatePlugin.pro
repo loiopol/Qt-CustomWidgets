@@ -32,4 +32,4 @@ SOURCES += \
 include(../QDeviceMultiState.pri)
 
 RESOURCES += \
-    icons.qrc
+    QDeviceMultiStatePlugin.qrc

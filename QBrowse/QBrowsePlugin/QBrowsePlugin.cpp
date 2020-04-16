@@ -20,7 +20,7 @@ QString QBrowseClass::group() const
 
 QIcon QBrowseClass::icon() const
 {
-    return QIcon(":/icon.png");
+    return QIcon(":/QBrowsePlugin/QBrowsePlugin.png");
 }
 
 QString QBrowseClass::includeFile() const

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/QBrowsePlugin">
+        <file>QBrowsePlugin.png</file>
+    </qresource>
+</RCC>

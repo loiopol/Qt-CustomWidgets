@@ -32,4 +32,4 @@ SOURCES += \
 include(../QFormLabel.pri)
 
 RESOURCES += \
-    icons.qrc
+    QFormLabelPlugin.qrc

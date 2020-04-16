@@ -20,7 +20,7 @@ QString QDeviceStatePlugin::group() const
 
 QIcon QDeviceStatePlugin::icon() const
 {
-    return QIcon(":/icon.png");
+    return QIcon(":/QDeviceMultiStatePlugin/QDeviceMultiStatePlugin.png");
 }
 
 QString QDeviceStatePlugin::includeFile() const

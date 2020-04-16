@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/QLedIndicatorPlugin">
+        <file>QLedIndicatorPlugin.png</file>
+    </qresource>
+</RCC>

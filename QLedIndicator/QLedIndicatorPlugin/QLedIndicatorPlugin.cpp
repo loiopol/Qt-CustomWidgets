@@ -39,7 +39,7 @@ QString QLedIndicatorPlugin::group() const
 
 QIcon QLedIndicatorPlugin::icon() const
 {
-    return QIcon(QLatin1String(":/icon.png"));
+    return QIcon(QLatin1String(":/QLedIndicatorPlugin/QLedIndicatorPlugin.png"));
 }
 
 QString QLedIndicatorPlugin::toolTip() const

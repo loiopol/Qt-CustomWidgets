@@ -36,7 +36,7 @@ QString QFormLabelPlugin::includeFile() const
 
 QIcon QFormLabelPlugin::icon() const
 {
-    return QIcon(":/icon.png");
+    return QIcon(":/QFormLabelPlugin/QFormLabelPlugin.png");
 }
 
 bool QFormLabelPlugin::isContainer() const

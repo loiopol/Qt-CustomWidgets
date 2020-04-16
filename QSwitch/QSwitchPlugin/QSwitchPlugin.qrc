@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/QSwitchPlugin">
+        <file>QSwitchPlugin.png</file>
+    </qresource>
+</RCC>

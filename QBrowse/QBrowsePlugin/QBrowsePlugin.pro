@@ -32,4 +32,4 @@ SOURCES += \
     QBrowsePlugin.cpp
 
 RESOURCES += \
-    icons.qrc
+    QBrowsePlugin.qrc

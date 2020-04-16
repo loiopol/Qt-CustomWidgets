@@ -32,4 +32,4 @@ SOURCES += \
 include(../QDeviceState.pri)
 
 RESOURCES += \
-    icons.qrc
+    QDeviceStatePlugin.qrc
