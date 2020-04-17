@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/QNumericPadPlugin">
+        <file>QNumericPadPugin.png</file>
+    </qresource>
+</RCC>

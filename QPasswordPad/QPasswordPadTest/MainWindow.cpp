@@ -2,6 +2,9 @@
 
 #include "QPasswordPad.h"
 
+#include <QApplication>
+#include <QStyleFactory>
+
 #include <QVBoxLayout>
 #include <QLabel>
 #include <QPushButton>
@@ -9,12 +12,13 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
+    QApplication::setStyle(QStyleFactory::create("Fusion"));
     resize(300, 260);
     setCentralWidget(new QWidget(this));
     QVBoxLayout *layout = new QVBoxLayout(this);
     centralWidget()->setLayout(layout);
 
-    QLabel* title = new QLabel(tr("QFormLabel\nBy Lorenzo"), this);
+    QLabel* title = new QLabel(tr("QPasswordPad\nBy Lorenzo"), this);
     title->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
 
     QPushButton* openDoorButton = new QPushButton("Click for open the door", this);

@@ -3,6 +3,7 @@
 #include <QGridLayout>
 #include <QLineEdit>
 
+#include <QApplication>
 #include <QPropertyAnimation>
 
 Button::Button(const QString &text, QWidget *parent) :
@@ -22,6 +23,7 @@ QSize Button::sizeHint() const
 
 QPasswordPad::QPasswordPad(QWidget *parent) :
     QDialog(parent),
+    mainLayout(new QGridLayout(this)),
     mDisplay(new QLineEdit("", this)),
     mPasswords(QVector<QString>{""}),
     mReturnValue(-1)
@@ -31,6 +33,7 @@ QPasswordPad::QPasswordPad(QWidget *parent) :
 
 QPasswordPad::QPasswordPad(const QString &password, QWidget *parent) :
     QDialog(parent),
+    mainLayout(new QGridLayout(this)),
     mDisplay(new QLineEdit("", this)),
     mPasswords(QVector<QString>{password}),
     mReturnValue(-1)
@@ -40,6 +43,7 @@ QPasswordPad::QPasswordPad(const QString &password, QWidget *parent) :
 
 QPasswordPad::QPasswordPad(const QVector<QString> &passwords, QWidget *parent) :
     QDialog(parent),
+    mainLayout(new QGridLayout(this)),
     mDisplay(new QLineEdit("", this)),
     mPasswords(passwords),
     mReturnValue(-1)
@@ -164,18 +168,17 @@ void QPasswordPad::initGuiButtons()
     cancelButton = createButton(tr("Cancel"), SLOT(cancelClicked()));
     cancelButton->setShortcut(Qt::Key_Escape);
 
-    QPalette okButtonPalette = okButton->palette();
-    okButtonPalette.setColor(QPalette::Button, QColor(55, 0, 174));
+    QPalette okButtonPalette = QApplication::palette();
+    okButtonPalette.setColor(QPalette::Button, QColor(41, 128, 185));
     okButton->setPalette(okButtonPalette);
 
-    QPalette cancelButtonPalette = cancelButton->palette();
-    cancelButtonPalette.setColor(QPalette::Button, QColor(207, 102, 121));
+    QPalette cancelButtonPalette = QApplication::palette();
+    cancelButtonPalette.setColor(QPalette::Button, QColor(192, 57, 43));
     cancelButton->setPalette(cancelButtonPalette);
 }
 
 void QPasswordPad::initGuiLayout()
 {
-    mainLayout = new QGridLayout;
     mainLayout->setSizeConstraint(QLayout::SetFixedSize);
     mainLayout->setMargin(12);
 
@@ -200,7 +203,7 @@ void QPasswordPad::initGuiLayout()
 
 Button *QPasswordPad::createButton(const QString &text, const char *member)
 {
-    Button *button = new Button(text);
+    Button *button = new Button(text, this);
     connect(button, SIGNAL(clicked()), this, member);
     return button;
 }
